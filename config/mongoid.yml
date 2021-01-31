@@ -1,0 +1,6 @@
+development:
+  clients:
+    default:
+      database: sinatra_blog
+      hosts:
+        - localhost:27017

@@ -1,0 +1,18 @@
+<section class="section mt-5">
+  <div class="container">
+    <div class="card">
+      <div class="card-body">
+        <dl>
+          <% @posts.each do |post| %>
+            <dt>
+              <a href="/post/<%= post._id %>"><%= post.title %></a>
+            </dt>
+            <dd>
+              <%= post.content %>
+            </dd>
+          <% end %>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
